@@ -1,4 +1,6 @@
 import React from 'react';
+import DeleteIcon from '@material-ui/icons/Delete';
+import StarRating from './StarRating'
 
 
 function Note(props){
@@ -12,8 +14,9 @@ function Note(props){
                     event.preventDefault();
                 }}
             >
-            Delete
+            <DeleteIcon/>
             </button>
+            <StarRating outOf='7' />
         </div>
     )
 }
